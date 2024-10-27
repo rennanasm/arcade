@@ -1,19 +1,47 @@
 # Pesquisa sobre C++
 
 - Quais as vantagens de uma linguagem compilada em relação a uma interpretada?
+R-Desempenho: Linguagens compiladas costumam ser mais rápidas na execução, pois o código-fonte é transformado diretamente em código de maquinapelo compilador. Eficiência no uso de recursos: Como o código é convertido para instruções de máquina, ele pode ser otimizado pelo compilador para usar melhor a cpu e a memória. Segurança do código-fonte: Em uma linguagem compilada, o código-fonte não é distribuído junto com o executáve, ou seja , o usuário recebe um executável binário, não o código fone original.
+
 - Quais os tipos de comentários em C++?
+R-//: Comentário de linha única.       */ ... */**: Comentário de múltiplas linhas.
+
 - O include é um comando para o compilador ou para o pré-processador?
+R-É um comando para o pré-processador, isso inclui o conteúdo do arquivo na posição do #include antes da compilação
+
 - O que é o pre-processador? Todos os comandos iniciados por # são para o pré-processador?
+R-O pré-processador executa instruções antes da compilação, como inclusão de arquivos e definição de macros. Sim, todos os comandos com # (como #define e #include) são instruções para o pré-processador.
+
 - O que é um namespace? Cite outras linguagens que possuem algo similar.
+R- Um namespace é um agrupador para evitar conflitos de nomes (como std em C++). Linguagens com algo semelhante: C# (namespaces), Python (módulos), Java (pacotes).
+
 - Qual o conceito de escopo em uma linguagem de programação?
+R- Escopo é o contexto onde uma variável ou função pode ser acessada (por exemplo, dentro de uma função, bloco {} ou no escopo global).
+
 - Qual a diferença entre uma variável local e uma global?
+R- Local: Declarada dentro de funções ou blocos e só é acessível ali. Global: Declarada fora de funções e acessível em todo o programa.
+
 - Quando uma variável é alocada na Stack e quando é alocada na Heap?
+R- Stack: Variáveis locais e temporárias. Heap: Variáveis alocadas dinamicamente com new ou malloc
+
 - Quais as formas de se inicializar uma variável em C++? Qual a mais recomendada?
+R- Inicialização direta: int x = 10; Inicialização por lista (uniforme): int x{10}; A inicialização por lista é mais recomendada, pois evita conversões implícitas.
+
 - O que é o buffer de entrada e saída padrão? Como manipular esses buffers?
+R- São áreas temporárias para armazenar dados de entrada/saída (como cin e cout). Podem ser manipulados com flush, getline, ou redirecionamento.
+
 - O buffer de entrada sempre são sempre teclado e tela ou podem ser redirecionados?
+R- Podem ser redirecionados para arquivos ou outros dispositivos usando operadores (<, >).
+
 - Quais os tipos primivos de dados em C++?
+R- Inteiros: int, long, short. Ponto flutuante: float, double. Caracteres: char. Booleano: bool
+
 - Quais os principais modificadores de tipo em C++?
+R- unsigned (sem sinal), signed (com sinal), const (constante), volatile (modificável fora do programa).
+
 - Como funciona a palavra reservada auto?
+R- auto permite que o compilador deduza o tipo da variável automaticamente: auto x = 10;
+
 - Como fazer a conversão entre tipos primivos em C e com é a sintaxe do static_cast? Qual a diferença entre static_cast e reinterpret_cast?
 - Qual a diferença entre o ++ antes e depois de uma variável?
 - Reescreva o seguinte código sem sem usar os operadores unários ++ e -- [LINK](#corrija)
